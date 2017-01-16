@@ -1,5 +1,5 @@
 resource "mailgun_domain" "proxy" {
-  name          = "mg.${var.domain}"
+  name          = "${var.domain}"
   spam_action   = "disabled"
   smtp_password = "${var.smtp_password}"
 }
